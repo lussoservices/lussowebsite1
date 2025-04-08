@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Ticketing | Lusso ✨</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Maname&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="service-page">
+        <!-- Header with back button -->
+        <header class="service-header">
+            <a href="../index.html" class="back-button">← ආපසු මුල් පිටුවට</a>
+            <h1>ගුවන් ටික්ට්පත් සේවා</h1>
+        </header>
+
+        <!-- Service Details Section -->
+        <div class="service-details">
+            <div class="service-hero">
+                <img src="images/plane.jpg" alt="Air Ticket Booking">
+            </div>
+
+            <div class="service-content">
+               
+                <p class="service-description flight-note">
+                    ලොව ඕනෑම තැනකට දැරිය හැකි මිලකට Lusso විතින් අදම ඔබේ ටිකට් පත වෙන් කරවා ගන්න. පහත ෆෝරමය පුරවා WhatsApp හරහා අප වෙත එවන්න, එවිට අප හරි මිලක් ඔබ වෙත එවනු ඇත.
+                </p>
+                
+                <div class="flight-form">
+                    <h3>WhatsApp හරහා මිල ගණන් ලබා ගන්න</h3>
+                    <form id="quoteForm">
+
+                      <div class="form-group">
+                        <label for="name">නම:</label>
+                        <input type="text" id="name" name="name" required>
+<!-- Add name="name" -->
+                      </div>
+
+                      <div class="form-group">
+                        <label for="destination">ගමනාන්තය:</label>
+                        <input type="text" id="destination" placeholder="e.g. Colombo, Maldives" required>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="departureDate">පිටත්වීමේ දිනය:</label>
+                        <input type="date" id="departureDate" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="arrivalDate">ආපසු පැමිණීමේ දිනය:</label>
+                        <input type="date" id="arrivalDate" required>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="adults">වැඩිහිටියන්:</label>
+                        <input type="number" id="adults" min="1" value="1" required>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="children">ළමයි:</label>
+                        <input type="number" id="children" min="0" value="0">
+                      </div>
+                      
+                      <button type="submit" class="whatsapp-button">
+                        <i class="fab fa-whatsapp"></i> ඉල්ලීම ඉදිරිපත් කරන්න
+                      </button>
+                    </form>
+                  </div>
+                  
+                <!-- Partners Section -->
+                <div class="partners">
+                    <h3>Airline Partners</h3>
+                    <div class="partner-logos">
+                        <img src="images/qatar.png" alt="Airline Partner 1">
+                        <img src="images/ethiad.jpg" alt="Airline Partner 2">
+                        <img src="images/turkish.jpg" alt="Airline Partner 3">
+                        <!-- Add more logos here when needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
